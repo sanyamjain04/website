@@ -5,6 +5,7 @@ import Founder from '@site/src/components/Aboutpage/Founder';
 import Layout from '@theme/Layout';
 import Newsletter from '../components/newsletter/Newsletter';
 import Team from '../components/team/Team';
+import { teamData } from '../data/data';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Reach />
       <Founder />
       <Newsletter />
-      <Team />
+      <Team data={teamData} heading={"Team"} />
     </Layout>
   );
 }

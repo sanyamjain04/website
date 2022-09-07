@@ -6,14 +6,13 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 
-const Team = () => {
-  console.log(teamData);
+const Team = ({data, heading}) => {
   return (
     <div className={styles.team}>
-      <h1 className={styles.heading}>Team</h1>
+      <h1 className={styles.heading}>{heading}</h1>
 
       <div className={styles.cards}>
-        {teamData.map((user, index) => (
+        {data.map((user, index) => (
           <div key={index} className={styles.card}>
             <img className={styles.coverPhoto} src={user.coverPhoto} />
             <div className={styles.info}>

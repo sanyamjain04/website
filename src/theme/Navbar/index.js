@@ -58,6 +58,7 @@ const navbarContent = {
           >
             Workshops
           </a>
+          <a href="/website/contributors">Contributors</a>
         </div>
       </div>
     </>
@@ -106,6 +107,9 @@ const mobileViewContent = {
           Workshops
         </a>
       </div>
+      <div>
+        <a href="/website/contributors">Contributors</a>
+      </div>
     </div>
   ),
 };
@@ -124,7 +128,9 @@ function Navbar() {
         <nav className={styles.navbar_positioning}>
           <div className={styles.navbar_logopair}>
             <div className={styles.navbar_logo}>
-              <navbarLogo.logo.Svg className={styles.logo} role="" />
+              <a href="/website">
+                <navbarLogo.logo.Svg className={styles.logo} role="" />
+              </a>
             </div>
             <button
               className={styles.mobile_menu_icon}
