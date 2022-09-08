@@ -21,7 +21,6 @@ export default function NotFound() {
     } else {
       if(address.length > 27){
         address = address.slice(25 , address.length)
-        console.log("https://blog.kubesimplify.com/" + address)
         window.location.replace("https://blog.kubesimplify.com/" + address)
       }
     }
